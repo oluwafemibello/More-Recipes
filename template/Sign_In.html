@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Sign_In</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-4.0.0-alpha.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css"rel="stylesheet">
+	
+	<style>
+<!--
+body {
+background-image: url(images/Halloween-Candy-Bars-Hero-6x4-06102016.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: contain;
+background-position: center;
+}
+//-->
+</style>
+
+  </head>
+  <body>  
+  
+    
+   <nav class="navbar navbar-dark navbar-fixed-top bg-inverse">
+      <button type="button" class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation"></button>
+      <a class="navbar-brand" href="#">More Recipes</a>
+      <div id="navbar">
+        <nav class="nav navbar-nav float-xs-left nav-pills">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link active" href="Sign_In.html">Sign In</a>
+          <a class="nav-item nav-link" href="Sign_Up.html">Sign Up</a>
+        </nav>
+        <form class="float-xs-right">
+          <input type="text" class="form-control" placeholder="Search...">
+        </form>
+      </div>
+    </nav>
+  
+
+    <div class="container">
+
+     <form class="form-signin">
+        <h4 class="form-signin-heading"><font color="#FFFFFF">Sign In with Email</font></h4>
+        <label for="inputEmail" class="sr-only"></label><br>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus size="10"><br>
+        <label for="inputPassword" class="sr-only"></label><br>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required size="10"><br>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> <font color="#FFFFFF">Remember me</font>
+          </label><br>
+        </div>
+		
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		
+		 <div class="row">
+	<center><font size="-1" color="#FFFFFF">
+	<br><p>You Don't Have A Log In? <a href="Sign_Up.html"> Sign Up for Free!</a></p>
+	<p>By Signing In, You Agree to Our Terms and Conditions and Our Privacy Policy</p></font></center>
+	</div>
+      </form>
+	  
+
+    </div> <!-- /container -->
+
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+
+  window.addEventListener('load', function() {
+    var form = document.getElementById('needs-validation');
+    form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  }, false);
+})();
+</script>
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+
+  window.addEventListener('load', function() {
+    var form = document.getElementById('needs-validation');
+    form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  }, false);
+})();
+</script>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="bootstrap-4.0.0-alpha.5/docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="bootstrap-4.0.0-alpha.5/docs/assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap-4.0.0-alpha.5/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

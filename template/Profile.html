@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Profile</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-4.0.0-alpha.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/profile_form.css" rel="stylesheet">
+	
+    <!-- Custom styles for this template -->
+    <link href="../../../../css/profile.css" rel="stylesheet">
+	
+	<style>
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.container:hover .image {
+  opacity: 0.3;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+body {
+background-image:url(images/Angel+Food-+High+Res-6766.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+}
+
+</style>
+  </head>
+  <body>  
+    
+	
+		
+ <nav class="navbar navbar-dark navbar-fixed-top bg-inverse">
+      <button type="button" class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation"></button>
+      <a class="navbar-brand" href="#">More Recipes</a>
+      <div id="navbar">
+        <nav class="nav navbar-nav float-xs-left nav-pills">
+          
+		  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ 
+ <a class="navbar-brand" href="#"></a>
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+ 
+  <div class="collapse navbar-collapse" id="navbarText">
+    
+	<ul class="nav flex-column">
+      
+	  <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+     
+	  <li class="nav-item">
+        <a class="nav-link" href="Profile.html">Profile</a>
+      </li>
+ 	  
+	  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Recipes</a>
+    
+	<div class="dropdown-menu">
+      <a class="dropdown-item" href="My_Recipes.html">All Recipes</a>
+	 <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="My_Recipes_Add.html">Add Recipe</a>
+      <a class="dropdown-item" href="My_Recipes_Edit.html">Edit/Delete Recipe</a>
+    </div>
+    </li>
+	     
+	 <li class="nav-item">
+        <a class="nav-link" href="My_Favorite_Recipe.html">Favorite Recipes</a>
+	 </li>
+     
+    </ul>
+  </div>
+</nav>
+		  
+		  
+        </nav>
+        <form class="float-xs-right">
+          <input type="text" class="form-control" placeholder="Search...">
+        </form>
+      </div>
+    </nav>
+	
+	
+	<div class="container">
+	
+	<div class="col-xs-6 col-sm-3 placeholder">
+	
+             <div class="container">
+			 
+  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Profile Picture" class="image" style="width:200" height="200">
+  <div class="middle">
+    <div class="text"><a href="#">Edit Picture</a></div>
+  </div>
+</div>
+            </div>
+
+      <br><form class="form-signin">
+        <h3 class="form-signin-heading"><font color="#0000FF">Profile</h3>
+		
+
+	 <label for="inputUsername" class="sr-only">Username</label><br>
+        <input type="email" id="inputUsername" class="form-control" autofocus value="@Username"><br>
+	
+		<h4 class="form-signin-heading">Change Password</h4>
+		
+        <label for="inputOldPassword" class="sr-only">Old Password</label>
+        <input type="password" id="inputOldPassword" class="form-control" value="Old Password">
+		
+		<label for="inputNewPassword" class="sr-only">New Password</label>
+        <input type="password" id="inputNewPassword" class="form-control" placeholder="New Password">
+		
+		<label for="inputEmail" class="sr-only">Email</font></label>
+        <input type="email" id="inputEmail" class="form-control" value="@userEmail.domain.com"><br><br>
+		<div align="center">
+          <button class="btn btn-md btn-primary" type="reset">Cancel</button>
+		  <button class="btn btn-md btn-primary" type="submit">Update</button>
+		</div>
+      </form>
+
+    </div> <!-- /container -->
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="bootstrap-4.0.0-alpha.5/docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="bootstrap-4.0.0-alpha.5/docs/assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap-4.0.0-alpha.5/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
