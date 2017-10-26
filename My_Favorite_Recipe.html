@@ -17,70 +17,34 @@
 	    <!-- Custom styles for this template -->
     <link href="css/my_favourite_recipe.css" rel="stylesheet">
 	
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	
   </head>
   <body>
     
-		
- <nav class="navbar navbar-dark navbar-fixed-top bg-inverse">
+   <nav class="navbar navbar-dark navbar-fixed-top bg-inverse">
       <button type="button" class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation"></button>
       <a class="navbar-brand" href="#">More Recipes</a>
       <div id="navbar">
         <nav class="nav navbar-nav float-xs-left nav-pills">
-          
-		  <nav class="navbar navbar-expand-lg navbar-light bg-light">
- 
- <a class="navbar-brand" href="#"></a>
- 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
- 
-  <div class="collapse navbar-collapse" id="navbarText">
-    
-	<ul class="nav flex-column">
-      
-	  <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-     
-	  <li class="nav-item">
-        <a class="nav-link" href="Profile.html">Profile</a>
-      </li>
- 	  
-	  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Recipes</a>
-    
-	<div class="dropdown-menu">
-      <a class="dropdown-item" href="My_Recipes.html">All Recipes</a>
-	 <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="My_Recipes_Add.html">Add Recipe</a>
-      <a class="dropdown-item" href="My_Recipes_Edit.html">Edit/Delete Recipe</a>
-    </div>
-    </li>
-	     
-	 <li class="nav-item">
-        <a class="nav-link" href="My_Favorite_Recipe.html">Favorite Recipes</a>
-	 </li>
-     
-    </ul>
-  </div>
-</nav>
-		  
-		  
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="Sign_In.html">Sign In</a>
+          <a class="nav-item nav-link" href="Sign_Up.html">Sign Up</a>
+          <a class="nav-item nav-link" href="Profile.html">Profile</a>
+   		  <a class="nav-item nav-link" href="My_Recipes.html">My Recipes</a>
+          <a class="nav-item nav-link active" href="My_Favorite_Recipe.html">Favorite Recipes</a>
         </nav>
         <form class="float-xs-right">
           <input type="text" class="form-control" placeholder="Search...">
         </form>
       </div>
     </nav>
+  
 	
 	
 	      <!-- Jumbotron -->
       <div class="jumbotron">
-        <P><center><font color="#FFFFFF"><B><h1>FIND A RECIPE</h1></B></font></center></P>
-<form>
-  <input type="text" name="search" placeholder="Search..">
-</form>
+        <P><center><font color="#FFFFFF"><B><h1><i>find a million ways to cook.... </i></h1></B></font></center></P>
 
       </div>
 	
@@ -93,75 +57,84 @@
 
         <div class="row">
           <div class="card">
-            <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
             <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+		<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
+          </div>
+		  
+        <div class="card">
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
+            <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
           </div>
 		  
           <div class="card">
-             <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
             <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
-          </div>
-		  
-          <div class="card">
-             <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
-            <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
           </div>
 
           <div class="card">
-             <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
             <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
           </div>
 		  
           <div class="card">
-             <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
             <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
           </div>
 		  
           <div class="card">
-             <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
             <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
           </div>
 
           <div class="card">
-             <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
             <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
+          </div>
+		  
+         <div class="card">
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
+            <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
           </div>
 		  
           <div class="card">
-             <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
             <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
-          </div>
-		  
-          <div class="card">
-            <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
-            <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
           </div>
         </div>
 

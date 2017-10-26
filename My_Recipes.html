@@ -17,70 +17,35 @@
 	    <!-- Custom styles for this template -->
     <link href="css/my_favourite_recipe.css" rel="stylesheet">
 	
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	
   </head>
   <body>
     
 	
- <nav class="navbar navbar-dark navbar-fixed-top bg-inverse">
+   <nav class="navbar navbar-dark navbar-fixed-top bg-inverse">
       <button type="button" class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation"></button>
       <a class="navbar-brand" href="#">More Recipes</a>
       <div id="navbar">
         <nav class="nav navbar-nav float-xs-left nav-pills">
-          
-		  <nav class="navbar navbar-expand-lg navbar-light bg-light">
- 
- <a class="navbar-brand" href="#"></a>
- 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
- 
-  <div class="collapse navbar-collapse" id="navbarText">
-    
-	<ul class="nav flex-column">
-      
-	  <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-     
-	  <li class="nav-item">
-        <a class="nav-link" href="Profile.html">Profile</a>
-      </li>
- 	  
-	  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Recipes</a>
-    
-	<div class="dropdown-menu">
-      <a class="dropdown-item" href="My_Recipes.html">All Recipes</a>
-	 <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="My_Recipes_Add.html">Add Recipe</a>
-      <a class="dropdown-item" href="My_Recipes_Edit.html">Edit/Delete Recipe</a>
-    </div>
-    </li>
-	     
-	 <li class="nav-item">
-        <a class="nav-link" href="My_Favorite_Recipe.html">Favorite Recipes</a>
-	 </li>
-     
-    </ul>
-  </div>
-</nav>
-		  
-		  
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="Sign_In.html">Sign In</a>
+          <a class="nav-item nav-link" href="Sign_Up.html">Sign Up</a>
+          <a class="nav-item nav-link" href="Profile.html">Profile</a>
+   		  <a class="nav-item nav-link active" href="My_Recipes.html">My Recipes</a>
+          <a class="nav-item nav-link" href="My_Favorite_Recipe.html">Favorite Recipes</a>
         </nav>
         <form class="float-xs-right">
           <input type="text" class="form-control" placeholder="Search...">
         </form>
       </div>
     </nav>
+  
 	
 	
 	      <!-- Jumbotron -->
       <div class="jumbotron">
-        <P><center><font color="#FFFFFF"><B><h1>FIND A RECIPE</h1></B></font></center></P>
-<form>
-  <input type="text" name="search" placeholder="Search..">
-</form>
+        <P><center><font color="#FFFFFF"><B><h1><i>find a million ways to cook.... </i></h1></B></font></center></P>
 
       </div>
 	
@@ -90,91 +55,782 @@
 	    <div class="row">
 		  <div class="row">
 		    <div class="col-form-label-lg">
-		<p><h4>My Recipes</h4></p></div>
-		   <div class="col-md-2" align="right">
-			<a href="My_Recipes_Add.html"><button class="btn btn-primary" type="button">Add New Recipe</button></a>
-          </div>
+		<p><h4>My Recipes  &nbsp; <font color="#FF3F00"> Add Recipe </font> <i class="fa fa-plus" aria-hidden="true" data-toggle="modal" data-target="#addRecipe" style="color:#FF0000"> </i> </h4></p>
+		
+		</div>
+		
+		<!-- Modal -->
+<div class="modal fade" id="addRecipe" tabindex="-1" role="dialog" aria-labelledby="addRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addRecipeLabel">Add Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  
+	  <div class="container-fluid">
+	  
+<form class="form-recipe">
+
+  <div class="form-group">
+    <label for="title"><font color="#FFFFFF"><h4>Title</h4></font></label>
+    <input type="text1" class="form-control" id="title" placeholder="Title Here">
+  </div>
+  
+<div class="form-group" >
+    <label for="description"><font color="#FFFFFF"><h4>Recipe Ingredients and Cooking Tips</h4></font></label>
+    <textarea class="form-control" id="description" rows="05" placeholder="Recipe Ingredients and Cooking Tips Here"></textarea>
+  </div>
+  
+<h4>Add image for food</h4>
+
+  <input name="myFile" type="file">
+
+</form>
+
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Add</button>	
+      </div>
+    </div>
+  </div>
+</div>
+		
+		
 		  
         <br><div class="row">
-          <br><div class="card">
-            <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
+          <div class="card">
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
             <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
-			<p align="center"><a href="My_Recipes_Edit.html"><button class="btn btn-primary" type="button">Edit / Delete</button></a></p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
+
+<p><i class="fa fa-trash-o" aria-hidden="true" style="color:#2A00AA"  data-toggle="modal" data-target="#deleteRecipe"></i>  &nbsp; &nbsp;&nbsp; &nbsp;
+
+<i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#00BF00" data-toggle="modal" data-target="#editRecipe"></i>
+
+
+<!-- Modal -->
+<div class="modal fade" id="deleteRecipe" tabindex="-1" role="dialog" aria-labelledby="deleteRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteRecipeLabel">Delete Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Do You Really Want to Delete The Recipe?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Delete</button>	
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="editRecipe" tabindex="-1" role="dialog" aria-labelledby="editRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editRecipeLabel">Edit Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  
+	  
+		<form class="form-recipe">
+
+  <div class="form-group">
+    <label for="title"><font color="#FFFFFF"><h4>Title</h4></font></label>
+    <input type="text1" class="form-control" id="title" value="Toasted Pumpkin Seeds with Sugar and Spice">
+  </div>
+  
+<div class="form-group" >
+    <label for="description"><font color="#FFFFFF"><h4>Recipe Ingredients and Cooking Tips</h4></font></label>
+    <textarea class="form-control" id="description" rows="25">Until their season runs out in late November, I'll be the one buying fresh figs every time I go grocery shopping and eating them every way I can think of. I can't stop.
+
+My newest obsession is cooking them in balsamic vinegar with some red grapes to make an agrodolce a sweet-and-sour sauce traditional to Italian cuisine to use as a topping for a pan-seared pork chops.
+
+To make this super-seasonal pork chop dinner, I start by searing small bone-in pork chops in a skillet to get a nice crust on them, then I toss them onto a sheet pan in a hot oven so I can use that skillet and all the nice little browned bits in it to make my agrodolce sauce while the chops finish cooking.
+
+Agrodolce is traditionally made by reducing vinegar and sugar into a sauce. I use balsamic and a little bit of honey to make mine. I infuse it with fresh rosemary and some crushed red pepper flakes while it cooks with the figs and grapes in it (which also add their flavor and juices to the sauce), and then swirl in some cold butter at the end to thicken and emulsify it. I find it hard not to lick my plate clean of this sauce�it's really something special.
+
+To balance out the sweet-tart flavors of the sauce and the richness of the meat, I serve the pork with a pleasantly bitter and bright radicchio and parsley salad. Start to finish, the whole meal comes together in about 40 minutes�fast enough for a weeknight, but fancy enough for company. And a very good reason to keep buying those fresh figs while you can.</textarea>
+  </div>
+	  
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>	
+      </div>
+    </div>
+  </div>
+</div>
+</i>
+
+</p>
           </div>
 		  
           <div class="card">
-             <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
             <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
-			<p align="center"><a href="My_Recipes_Edit.html"><button class="btn btn-primary" type="button">Edit / Delete</button></a></p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
+
+<p><i class="fa fa-trash-o" aria-hidden="true" style="color:#2A00AA"  data-toggle="modal" data-target="#deleteRecipe"></i>  &nbsp; &nbsp;&nbsp; &nbsp;
+
+<i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#00BF00" data-toggle="modal" data-target="#editRecipe"></i>
+
+
+<!-- Modal -->
+<div class="modal fade" id="deleteRecipe" tabindex="-1" role="dialog" aria-labelledby="deleteRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteRecipeLabel">Delete Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Do You Really Want to Delete The Recipe?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Delete</button>	
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="editRecipe" tabindex="-1" role="dialog" aria-labelledby="editRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editRecipeLabel">Edit Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  
+	  
+		<form class="form-recipe">
+
+  <div class="form-group">
+    <label for="title"><font color="#FFFFFF"><h4>Title</h4></font></label>
+    <input type="text1" class="form-control" id="title" value="Toasted Pumpkin Seeds with Sugar and Spice">
+  </div>
+  
+<div class="form-group" >
+    <label for="description"><font color="#FFFFFF"><h4>Recipe Ingredients and Cooking Tips</h4></font></label>
+    <textarea class="form-control" id="description" rows="25">Until their season runs out in late November, I'll be the one buying fresh figs every time I go grocery shopping and eating them every way I can think of. I can't stop.
+
+My newest obsession is cooking them in balsamic vinegar with some red grapes to make an agrodolce a sweet-and-sour sauce traditional to Italian cuisine to use as a topping for a pan-seared pork chops.
+
+To make this super-seasonal pork chop dinner, I start by searing small bone-in pork chops in a skillet to get a nice crust on them, then I toss them onto a sheet pan in a hot oven so I can use that skillet and all the nice little browned bits in it to make my agrodolce sauce while the chops finish cooking.
+
+Agrodolce is traditionally made by reducing vinegar and sugar into a sauce. I use balsamic and a little bit of honey to make mine. I infuse it with fresh rosemary and some crushed red pepper flakes while it cooks with the figs and grapes in it (which also add their flavor and juices to the sauce), and then swirl in some cold butter at the end to thicken and emulsify it. I find it hard not to lick my plate clean of this sauce�it's really something special.
+
+To balance out the sweet-tart flavors of the sauce and the richness of the meat, I serve the pork with a pleasantly bitter and bright radicchio and parsley salad. Start to finish, the whole meal comes together in about 40 minutes�fast enough for a weeknight, but fancy enough for company. And a very good reason to keep buying those fresh figs while you can.</textarea>
+  </div>
+	  
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>	
+      </div>
+    </div>
+  </div>
+</div>
+</i>
+
+</p>
           </div>
 		  
           <div class="card">
-             <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
             <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
-			<p align="center"><a href="My_Recipes_Edit.html"><button class="btn btn-primary" type="button">Edit / Delete</button></a></p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
+
+<p><i class="fa fa-trash-o" aria-hidden="true" style="color:#2A00AA"  data-toggle="modal" data-target="#deleteRecipe"></i>  &nbsp; &nbsp;&nbsp; &nbsp;
+
+<i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#00BF00" data-toggle="modal" data-target="#editRecipe"></i>
+
+
+<!-- Modal -->
+<div class="modal fade" id="deleteRecipe" tabindex="-1" role="dialog" aria-labelledby="deleteRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteRecipeLabel">Delete Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Do You Really Want to Delete The Recipe?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Delete</button>	
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="editRecipe" tabindex="-1" role="dialog" aria-labelledby="editRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editRecipeLabel">Edit Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  
+	  
+		<form class="form-recipe">
+
+  <div class="form-group">
+    <label for="title"><font color="#FFFFFF"><h4>Title</h4></font></label>
+    <input type="text1" class="form-control" id="title" value="Toasted Pumpkin Seeds with Sugar and Spice">
+  </div>
+  
+<div class="form-group" >
+    <label for="description"><font color="#FFFFFF"><h4>Recipe Ingredients and Cooking Tips</h4></font></label>
+    <textarea class="form-control" id="description" rows="25">Until their season runs out in late November, I'll be the one buying fresh figs every time I go grocery shopping and eating them every way I can think of. I can't stop.
+
+My newest obsession is cooking them in balsamic vinegar with some red grapes to make an agrodolce a sweet-and-sour sauce traditional to Italian cuisine to use as a topping for a pan-seared pork chops.
+
+To make this super-seasonal pork chop dinner, I start by searing small bone-in pork chops in a skillet to get a nice crust on them, then I toss them onto a sheet pan in a hot oven so I can use that skillet and all the nice little browned bits in it to make my agrodolce sauce while the chops finish cooking.
+
+Agrodolce is traditionally made by reducing vinegar and sugar into a sauce. I use balsamic and a little bit of honey to make mine. I infuse it with fresh rosemary and some crushed red pepper flakes while it cooks with the figs and grapes in it (which also add their flavor and juices to the sauce), and then swirl in some cold butter at the end to thicken and emulsify it. I find it hard not to lick my plate clean of this sauce�it's really something special.
+
+To balance out the sweet-tart flavors of the sauce and the richness of the meat, I serve the pork with a pleasantly bitter and bright radicchio and parsley salad. Start to finish, the whole meal comes together in about 40 minutes�fast enough for a weeknight, but fancy enough for company. And a very good reason to keep buying those fresh figs while you can.</textarea>
+  </div>
+	  
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>	
+      </div>
+    </div>
+  </div>
+</div>
+</i>
+
+</p>
+		  </div>
+		  
+          <div class="card">
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
+            <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
+
+<p><i class="fa fa-trash-o" aria-hidden="true" style="color:#2A00AA"  data-toggle="modal" data-target="#deleteRecipe"></i>  &nbsp; &nbsp;&nbsp; &nbsp;
+
+<i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#00BF00" data-toggle="modal" data-target="#editRecipe"></i>
+
+
+<!-- Modal -->
+<div class="modal fade" id="deleteRecipe" tabindex="-1" role="dialog" aria-labelledby="deleteRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteRecipeLabel">Delete Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Do You Really Want to Delete The Recipe?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Delete</button>	
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="editRecipe" tabindex="-1" role="dialog" aria-labelledby="editRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editRecipeLabel">Edit Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  
+	  
+		<form class="form-recipe">
+
+  <div class="form-group">
+    <label for="title"><font color="#FFFFFF"><h4>Title</h4></font></label>
+    <input type="text1" class="form-control" id="title" value="Toasted Pumpkin Seeds with Sugar and Spice">
+  </div>
+  
+<div class="form-group" >
+    <label for="description"><font color="#FFFFFF"><h4>Recipe Ingredients and Cooking Tips</h4></font></label>
+    <textarea class="form-control" id="description" rows="25">Until their season runs out in late November, I'll be the one buying fresh figs every time I go grocery shopping and eating them every way I can think of. I can't stop.
+
+My newest obsession is cooking them in balsamic vinegar with some red grapes to make an agrodolce a sweet-and-sour sauce traditional to Italian cuisine to use as a topping for a pan-seared pork chops.
+
+To make this super-seasonal pork chop dinner, I start by searing small bone-in pork chops in a skillet to get a nice crust on them, then I toss them onto a sheet pan in a hot oven so I can use that skillet and all the nice little browned bits in it to make my agrodolce sauce while the chops finish cooking.
+
+Agrodolce is traditionally made by reducing vinegar and sugar into a sauce. I use balsamic and a little bit of honey to make mine. I infuse it with fresh rosemary and some crushed red pepper flakes while it cooks with the figs and grapes in it (which also add their flavor and juices to the sauce), and then swirl in some cold butter at the end to thicken and emulsify it. I find it hard not to lick my plate clean of this sauce�it's really something special.
+
+To balance out the sweet-tart flavors of the sauce and the richness of the meat, I serve the pork with a pleasantly bitter and bright radicchio and parsley salad. Start to finish, the whole meal comes together in about 40 minutes�fast enough for a weeknight, but fancy enough for company. And a very good reason to keep buying those fresh figs while you can.</textarea>
+  </div>
+	  
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>	
+      </div>
+    </div>
+  </div>
+</div>
+</i>
+
+</p>
+          </div>
+		  
+         <div class="card">
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
+            <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
+
+<p><i class="fa fa-trash-o" aria-hidden="true" style="color:#2A00AA"  data-toggle="modal" data-target="#deleteRecipe"></i>  &nbsp; &nbsp;&nbsp; &nbsp;
+
+<i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#00BF00" data-toggle="modal" data-target="#editRecipe"></i>
+
+
+<!-- Modal -->
+<div class="modal fade" id="deleteRecipe" tabindex="-1" role="dialog" aria-labelledby="deleteRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteRecipeLabel">Delete Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Do You Really Want to Delete The Recipe?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Delete</button>	
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="editRecipe" tabindex="-1" role="dialog" aria-labelledby="editRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editRecipeLabel">Edit Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  
+	  
+		<form class="form-recipe">
+
+  <div class="form-group">
+    <label for="title"><font color="#FFFFFF"><h4>Title</h4></font></label>
+    <input type="text1" class="form-control" id="title" value="Toasted Pumpkin Seeds with Sugar and Spice">
+  </div>
+  
+<div class="form-group" >
+    <label for="description"><font color="#FFFFFF"><h4>Recipe Ingredients and Cooking Tips</h4></font></label>
+    <textarea class="form-control" id="description" rows="25">Until their season runs out in late November, I'll be the one buying fresh figs every time I go grocery shopping and eating them every way I can think of. I can't stop.
+
+My newest obsession is cooking them in balsamic vinegar with some red grapes to make an agrodolce a sweet-and-sour sauce traditional to Italian cuisine to use as a topping for a pan-seared pork chops.
+
+To make this super-seasonal pork chop dinner, I start by searing small bone-in pork chops in a skillet to get a nice crust on them, then I toss them onto a sheet pan in a hot oven so I can use that skillet and all the nice little browned bits in it to make my agrodolce sauce while the chops finish cooking.
+
+Agrodolce is traditionally made by reducing vinegar and sugar into a sauce. I use balsamic and a little bit of honey to make mine. I infuse it with fresh rosemary and some crushed red pepper flakes while it cooks with the figs and grapes in it (which also add their flavor and juices to the sauce), and then swirl in some cold butter at the end to thicken and emulsify it. I find it hard not to lick my plate clean of this sauce�it's really something special.
+
+To balance out the sweet-tart flavors of the sauce and the richness of the meat, I serve the pork with a pleasantly bitter and bright radicchio and parsley salad. Start to finish, the whole meal comes together in about 40 minutes�fast enough for a weeknight, but fancy enough for company. And a very good reason to keep buying those fresh figs while you can.</textarea>
+  </div>
+	  
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>	
+      </div>
+    </div>
+  </div>
+</div>
+</i>
+
+</p>
           </div>
 		  
           <div class="card">
-             <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
             <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
-			<p align="center"><a href="My_Recipes_Edit.html"><button class="btn btn-primary" type="button">Edit / Delete</button></a></p>
-          </div>
-		  
-          <div class="card">
-             <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
-            <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
-			<p align="center"><a href="My_Recipes_Edit.html"><button class="btn btn-primary" type="button">Edit / Delete</button></a></p>
-          </div>
-		  
-          <div class="card">
-             <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
-            <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
-			<p align="center"><a href="My_Recipes_Edit.html"><button class="btn btn-primary" type="button">Edit / Delete</button></a></p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
+
+<p><i class="fa fa-trash-o" aria-hidden="true" style="color:#2A00AA"  data-toggle="modal" data-target="#deleteRecipe"></i>  &nbsp; &nbsp;&nbsp; &nbsp;
+
+<i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#00BF00" data-toggle="modal" data-target="#editRecipe"></i>
+
+
+<!-- Modal -->
+<div class="modal fade" id="deleteRecipe" tabindex="-1" role="dialog" aria-labelledby="deleteRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteRecipeLabel">Delete Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Do You Really Want to Delete The Recipe?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Delete</button>	
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="editRecipe" tabindex="-1" role="dialog" aria-labelledby="editRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editRecipeLabel">Edit Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  
+	  
+		<form class="form-recipe">
+
+  <div class="form-group">
+    <label for="title"><font color="#FFFFFF"><h4>Title</h4></font></label>
+    <input type="text1" class="form-control" id="title" value="Toasted Pumpkin Seeds with Sugar and Spice">
+  </div>
+  
+<div class="form-group" >
+    <label for="description"><font color="#FFFFFF"><h4>Recipe Ingredients and Cooking Tips</h4></font></label>
+    <textarea class="form-control" id="description" rows="25">Until their season runs out in late November, I'll be the one buying fresh figs every time I go grocery shopping and eating them every way I can think of. I can't stop.
+
+My newest obsession is cooking them in balsamic vinegar with some red grapes to make an agrodolce a sweet-and-sour sauce traditional to Italian cuisine to use as a topping for a pan-seared pork chops.
+
+To make this super-seasonal pork chop dinner, I start by searing small bone-in pork chops in a skillet to get a nice crust on them, then I toss them onto a sheet pan in a hot oven so I can use that skillet and all the nice little browned bits in it to make my agrodolce sauce while the chops finish cooking.
+
+Agrodolce is traditionally made by reducing vinegar and sugar into a sauce. I use balsamic and a little bit of honey to make mine. I infuse it with fresh rosemary and some crushed red pepper flakes while it cooks with the figs and grapes in it (which also add their flavor and juices to the sauce), and then swirl in some cold butter at the end to thicken and emulsify it. I find it hard not to lick my plate clean of this sauce�it's really something special.
+
+To balance out the sweet-tart flavors of the sauce and the richness of the meat, I serve the pork with a pleasantly bitter and bright radicchio and parsley salad. Start to finish, the whole meal comes together in about 40 minutes�fast enough for a weeknight, but fancy enough for company. And a very good reason to keep buying those fresh figs while you can.</textarea>
+  </div>
+	  
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>	
+      </div>
+    </div>
+  </div>
+</div>
+</i>
+
+</p>
           </div>
 
-          <div class="card">
-             <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
+         <div class="card">
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
             <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
-			<p align="center"><a href="My_Recipes_Edit.html"><button class="btn btn-primary" type="button">Edit / Delete</button></a></p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
+
+<p><i class="fa fa-trash-o" aria-hidden="true" style="color:#2A00AA"  data-toggle="modal" data-target="#deleteRecipe"></i>  &nbsp; &nbsp;&nbsp; &nbsp;
+
+<i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#00BF00" data-toggle="modal" data-target="#editRecipe"></i>
+
+
+<!-- Modal -->
+<div class="modal fade" id="deleteRecipe" tabindex="-1" role="dialog" aria-labelledby="deleteRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteRecipeLabel">Delete Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Do You Really Want to Delete The Recipe?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Delete</button>	
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="editRecipe" tabindex="-1" role="dialog" aria-labelledby="editRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editRecipeLabel">Edit Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  
+	  
+		<form class="form-recipe">
+
+  <div class="form-group">
+    <label for="title"><font color="#FFFFFF"><h4>Title</h4></font></label>
+    <input type="text1" class="form-control" id="title" value="Toasted Pumpkin Seeds with Sugar and Spice">
+  </div>
+  
+<div class="form-group" >
+    <label for="description"><font color="#FFFFFF"><h4>Recipe Ingredients and Cooking Tips</h4></font></label>
+    <textarea class="form-control" id="description" rows="25">Until their season runs out in late November, I'll be the one buying fresh figs every time I go grocery shopping and eating them every way I can think of. I can't stop.
+
+My newest obsession is cooking them in balsamic vinegar with some red grapes to make an agrodolce a sweet-and-sour sauce traditional to Italian cuisine to use as a topping for a pan-seared pork chops.
+
+To make this super-seasonal pork chop dinner, I start by searing small bone-in pork chops in a skillet to get a nice crust on them, then I toss them onto a sheet pan in a hot oven so I can use that skillet and all the nice little browned bits in it to make my agrodolce sauce while the chops finish cooking.
+
+Agrodolce is traditionally made by reducing vinegar and sugar into a sauce. I use balsamic and a little bit of honey to make mine. I infuse it with fresh rosemary and some crushed red pepper flakes while it cooks with the figs and grapes in it (which also add their flavor and juices to the sauce), and then swirl in some cold butter at the end to thicken and emulsify it. I find it hard not to lick my plate clean of this sauce�it's really something special.
+
+To balance out the sweet-tart flavors of the sauce and the richness of the meat, I serve the pork with a pleasantly bitter and bright radicchio and parsley salad. Start to finish, the whole meal comes together in about 40 minutes�fast enough for a weeknight, but fancy enough for company. And a very good reason to keep buying those fresh figs while you can.</textarea>
+  </div>
+	  
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>	
+      </div>
+    </div>
+  </div>
+</div>
+</i>
+
+</p>
+          </div>
+		  
+         <div class="card">
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
+            <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
+
+<p><i class="fa fa-trash-o" aria-hidden="true" style="color:#2A00AA"  data-toggle="modal" data-target="#deleteRecipe"></i>  &nbsp; &nbsp;&nbsp; &nbsp;
+
+<i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#00BF00" data-toggle="modal" data-target="#editRecipe"></i>
+
+
+<!-- Modal -->
+<div class="modal fade" id="deleteRecipe" tabindex="-1" role="dialog" aria-labelledby="deleteRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteRecipeLabel">Delete Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Do You Really Want to Delete The Recipe?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Delete</button>	
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="editRecipe" tabindex="-1" role="dialog" aria-labelledby="editRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editRecipeLabel">Edit Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  
+	  
+		<form class="form-recipe">
+
+  <div class="form-group">
+    <label for="title"><font color="#FFFFFF"><h4>Title</h4></font></label>
+    <input type="text1" class="form-control" id="title" value="Toasted Pumpkin Seeds with Sugar and Spice">
+  </div>
+  
+<div class="form-group" >
+    <label for="description"><font color="#FFFFFF"><h4>Recipe Ingredients and Cooking Tips</h4></font></label>
+    <textarea class="form-control" id="description" rows="25">Until their season runs out in late November, I'll be the one buying fresh figs every time I go grocery shopping and eating them every way I can think of. I can't stop.
+
+My newest obsession is cooking them in balsamic vinegar with some red grapes to make an agrodolce a sweet-and-sour sauce traditional to Italian cuisine to use as a topping for a pan-seared pork chops.
+
+To make this super-seasonal pork chop dinner, I start by searing small bone-in pork chops in a skillet to get a nice crust on them, then I toss them onto a sheet pan in a hot oven so I can use that skillet and all the nice little browned bits in it to make my agrodolce sauce while the chops finish cooking.
+
+Agrodolce is traditionally made by reducing vinegar and sugar into a sauce. I use balsamic and a little bit of honey to make mine. I infuse it with fresh rosemary and some crushed red pepper flakes while it cooks with the figs and grapes in it (which also add their flavor and juices to the sauce), and then swirl in some cold butter at the end to thicken and emulsify it. I find it hard not to lick my plate clean of this sauce�it's really something special.
+
+To balance out the sweet-tart flavors of the sauce and the richness of the meat, I serve the pork with a pleasantly bitter and bright radicchio and parsley salad. Start to finish, the whole meal comes together in about 40 minutes�fast enough for a weeknight, but fancy enough for company. And a very good reason to keep buying those fresh figs while you can.</textarea>
+  </div>
+	  
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>	
+      </div>
+    </div>
+  </div>
+</div>
+</i>
+
+</p>
           </div>
 		  
           <div class="card">
-             <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
+            <img src="images/food_photography_burger_by_masterdev777-d3h1ryk.jpg" alt="Recipe_Image" width="300px" height="250px">
+			<p class="card-text"><h5><a href="Recipe_Detail.html">How to Bake A cripsy Bread Cake</a></h5></p>
             <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
-			<p align="center"><a href="My_Recipes_Edit.html"><button class="btn btn-primary" type="button">Edit / Delete</button></a></p>
-          </div>
-		  
-          <div class="card">
-            <img data-src="holder.js/100px280/thumb" alt="Recipe_Image" width="300px" height="250px">
-			<p class="card-text"><h5>Title @example How to Bake A cripsy Bread Cake</h5></p>
-            <p class="card-text">"This is a delicious unique variation of toasted pumpkin seeds. Easy to prepare and hard to mess up. Once you start eating them, you won't be able to stop!"</p>
-			<p class="card-text"><img src="images/image 2.svg" alt="Profile Picture" width="20px" height="20px"> Recipe by: @Author's Username</p>
-			<p class="card-text" align="center">Views 200 | Favourites 112 | Reviews 98</p>
-			<p align="center"><a href="My_Recipes_Edit.html"><button class="btn btn-primary" type="button">Edit / Delete</button></a></p>
+			<p class="card-text"><img src="images/GFAF-Pork-Chops-with-Grape-and-Fig-Agrodolce-and-Radicchio-Salad-inset.jpg" alt="Profile Picture" width="35px" height="35px"> Recipe by: @Author's Username</p>
+			<p class="card-text"> &nbsp; &nbsp; <i class="fa fa-eye" aria-hidden="true" style="color:#FF3F00"></i>  200   &nbsp; &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color:#FF0000"></i> 112 &nbsp; &nbsp;<i class="fa fa-comments-o" aria-hidden="true" style="color:#007F00"></i> 98 &nbsp; &nbsp; <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#2A00FF"></i> 57 &nbsp; &nbsp; <i class="fa fa-thumbs-down" aria-hidden="true" style="color:#2A1F55"> 3</i>
+</p>	<p class="card-text"> <i>More details</i>  <a href="Recipe_Detail.html"> <i class="fa fa-plus" aria-hidden="true"></i>  </a> </p>
+
+<p><i class="fa fa-trash-o" aria-hidden="true" style="color:#2A00AA"  data-toggle="modal" data-target="#deleteRecipe"></i>  &nbsp; &nbsp;&nbsp; &nbsp;
+
+<i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#00BF00" data-toggle="modal" data-target="#editRecipe"></i>
+
+
+<!-- Modal -->
+<div class="modal fade" id="deleteRecipe" tabindex="-1" role="dialog" aria-labelledby="deleteRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteRecipeLabel">Delete Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Do You Really Want to Delete The Recipe?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Delete</button>	
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="editRecipe" tabindex="-1" role="dialog" aria-labelledby="editRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editRecipeLabel">Edit Recipe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  
+	  
+		<form class="form-recipe">
+
+  <div class="form-group">
+    <label for="title"><font color="#FFFFFF"><h4>Title</h4></font></label>
+    <input type="text1" class="form-control" id="title" value="Toasted Pumpkin Seeds with Sugar and Spice">
+  </div>
+  
+<div class="form-group" >
+    <label for="description"><font color="#FFFFFF"><h4>Recipe Ingredients and Cooking Tips</h4></font></label>
+    <textarea class="form-control" id="description" rows="25">Until their season runs out in late November, I'll be the one buying fresh figs every time I go grocery shopping and eating them every way I can think of. I can't stop.
+
+My newest obsession is cooking them in balsamic vinegar with some red grapes to make an agrodolce a sweet-and-sour sauce traditional to Italian cuisine to use as a topping for a pan-seared pork chops.
+
+To make this super-seasonal pork chop dinner, I start by searing small bone-in pork chops in a skillet to get a nice crust on them, then I toss them onto a sheet pan in a hot oven so I can use that skillet and all the nice little browned bits in it to make my agrodolce sauce while the chops finish cooking.
+
+Agrodolce is traditionally made by reducing vinegar and sugar into a sauce. I use balsamic and a little bit of honey to make mine. I infuse it with fresh rosemary and some crushed red pepper flakes while it cooks with the figs and grapes in it (which also add their flavor and juices to the sauce), and then swirl in some cold butter at the end to thicken and emulsify it. I find it hard not to lick my plate clean of this sauce�it's really something special.
+
+To balance out the sweet-tart flavors of the sauce and the richness of the meat, I serve the pork with a pleasantly bitter and bright radicchio and parsley salad. Start to finish, the whole meal comes together in about 40 minutes�fast enough for a weeknight, but fancy enough for company. And a very good reason to keep buying those fresh figs while you can.</textarea>
+  </div>
+	  
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>	
+      </div>
+    </div>
+  </div>
+</div>
+</i>
+
+</p>
           </div>
         </div>
 

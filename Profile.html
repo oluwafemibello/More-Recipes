@@ -38,12 +38,6 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
-.container:hover .image {
-  opacity: 0.3;
-}
-.container:hover .middle {
-  opacity: 1;
-}
 .text {
   background-color: #4CAF50;
   color: white;
@@ -65,58 +59,24 @@ background-position: center;
     
 	
 		
- <nav class="navbar navbar-dark navbar-fixed-top bg-inverse">
+    <nav class="navbar navbar-dark navbar-fixed-top bg-inverse">
       <button type="button" class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation"></button>
       <a class="navbar-brand" href="#">More Recipes</a>
       <div id="navbar">
         <nav class="nav navbar-nav float-xs-left nav-pills">
-          
-		  <nav class="navbar navbar-expand-lg navbar-light bg-light">
- 
- <a class="navbar-brand" href="#"></a>
- 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
- 
-  <div class="collapse navbar-collapse" id="navbarText">
-    
-	<ul class="nav flex-column">
-      
-	  <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-     
-	  <li class="nav-item">
-        <a class="nav-link" href="Profile.html">Profile</a>
-      </li>
- 	  
-	  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Recipes</a>
-    
-	<div class="dropdown-menu">
-      <a class="dropdown-item" href="My_Recipes.html">All Recipes</a>
-	 <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="My_Recipes_Add.html">Add Recipe</a>
-      <a class="dropdown-item" href="My_Recipes_Edit.html">Edit/Delete Recipe</a>
-    </div>
-    </li>
-	     
-	 <li class="nav-item">
-        <a class="nav-link" href="My_Favorite_Recipe.html">Favorite Recipes</a>
-	 </li>
-     
-    </ul>
-  </div>
-</nav>
-		  
-		  
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="Sign_In.html">Sign In</a>
+          <a class="nav-item nav-link" href="Sign_Up.html">Sign Up</a>
+          <a class="nav-item nav-link active" href="Profile.html">Profile</a>
+   		  <a class="nav-item nav-link" href="My_Recipes.html">My Recipes</a>
+          <a class="nav-item nav-link" href="My_Favorite_Recipe.html">Favorite Recipes</a>
         </nav>
         <form class="float-xs-right">
           <input type="text" class="form-control" placeholder="Search...">
         </form>
       </div>
     </nav>
+  
 	
 	
 	<div class="container">
@@ -125,10 +85,7 @@ background-position: center;
 	
              <div class="container">
 			 
-  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Profile Picture" class="image" style="width:200" height="200">
-  <div class="middle">
-    <div class="text"><a href="#">Edit Picture</a></div>
-  </div>
+  <img src="images/profile picture/The Bellos 001 1.jpg" alt="Profile Picture" class="image" style="width:200" height="200">
 </div>
             </div>
 
@@ -148,7 +105,11 @@ background-position: center;
         <input type="password" id="inputNewPassword" class="form-control" placeholder="New Password">
 		
 		<label for="inputEmail" class="sr-only">Email</font></label>
-        <input type="email" id="inputEmail" class="form-control" value="@userEmail.domain.com"><br><br>
+        <input type="email" id="inputEmail" class="form-control" value="@userEmail.domain.com"><br>
+		
+	 <h4><font color="#0000FF">Edit Profile Picture</font></h4><br>
+
+  <input name="myFile" type="file"><br><br>
 		<div align="center">
           <button class="btn btn-md btn-primary" type="reset">Cancel</button>
 		  <button class="btn btn-md btn-primary" type="submit">Update</button>
